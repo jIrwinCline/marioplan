@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
-
+import Navbar from './components/layouts/Navbar';
 import Routes from './Routes';
 
 
 const App = () => (
   <BrowserRouter>
-    <main className="container">
-      <h1>Marioplan</h1>
-    </main>
+    <div className="App">
+      <Navbar />
+    </div>
   </BrowserRouter>
 );
 
