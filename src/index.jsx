@@ -10,12 +10,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // hot reload for development
 import { AppContainer } from 'react-hot-loader';
-
 import App from './App';
-
 import './style.scss';
+import { createStore } from 'redux';
 
 const root = document.getElementById('root');
+
+const store = createStore();
 
 const render = (Component) => {
   ReactDOM.render(
