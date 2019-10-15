@@ -13,16 +13,20 @@ import { AppContainer } from 'react-hot-loader';
 import App from './App';
 import './style.scss';
 import { createStore } from 'redux';
+import rootReducer from './store/reducer/rootReducer';
+import { Provider } from 'react-redux'
 
 const root = document.getElementById('root');
 
-const store = createStore();
+const store = createStore(rootReducer);
 
 const render = (Component) => {
   ReactDOM.render(
-    <AppContainer>
-      <Component />
-    </AppContainer>,
+    <Provider>
+      <AppContainer>
+        <Component />
+      </AppContainer>
+    </Provider>,
     root,
   );
 };
