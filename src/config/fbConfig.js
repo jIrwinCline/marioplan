@@ -15,6 +15,7 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.firestore().settings({ timestampsInSnapshots: true })
+// was told to rmove by error/warn
+// firebase.firestore().settings({ timestampsInSnapshots: true })
 
 export default firebase;
