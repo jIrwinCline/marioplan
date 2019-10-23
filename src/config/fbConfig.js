@@ -14,7 +14,8 @@ var firebaseConfig = {
     measurementId: "G-LFHN8Y2DS6"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig)
+export const todosRef = firebase.firestore()
 // was told to rmove by error/warn
 // firebase.firestore().settings({ timestampsInSnapshots: true })
 
